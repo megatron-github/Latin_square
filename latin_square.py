@@ -1,14 +1,10 @@
-""" rectangle.py
-
-    Directions:  Implement the functions contains_duplicates and has_all_values;
-    and the constructor and methods for the class Rectangle, as described
-    below.  Assert statements are given to enforce preconditions and should not
-    be modified.
-
-NAME: Truong Pham
-
-DATE: 1/23/19
-
+""" 
+    File: latin_square.py
+    
+    Descriptions: The program is going to create some examples to test
+                  whether the program itself can detect a latin square.
+                  This program is a practice on object oriented
+                  programming.
 """
 
 def contains_duplicates(a_list):
@@ -104,7 +100,7 @@ class Rectangle:
             return True
         return False
 
-    def print(self):
+    def print1(self):
         """ Display this rectangle on the standard output, in this format:
             {{1, 2, 3},
              {4, 5, 6}}
@@ -168,16 +164,16 @@ class Rectangle:
         return True
 
 def example():
-    """ Professor Campbell's example """
+    """ Latin Squares program testing examples """
 
     rect1 = Rectangle(2, 3, [1, 2, 3, 4, 5, 6])
-    rect1.print()   # {{1, 2, 3},
+    rect1.print1()   # {{1, 2, 3},
                     #  {4, 5, 6}}
     print(rect1.is_square())  # False
     print(rect1.get_column(1))  # [2, 5]
 
     rect2 = Rectangle(3, 3, [1, 2, 3, 2, 3, 1, 3, 1, 2])
-    rect2.print()
+    rect2.print1()
     print(rect2.is_square())  # True
     print(rect2.is_latin_square()) # True
 
